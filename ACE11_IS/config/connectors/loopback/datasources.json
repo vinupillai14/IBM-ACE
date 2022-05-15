@@ -1,0 +1,12 @@
+{
+  "postgresqlds": {
+    "host": "localhost",
+    "protocol": "postgres",
+    "port": 5432,
+    "database": "postgres",
+    "name": "postgresqlds",
+    "username": "postgres", 
+    "password": "password",
+    "connector": "postgresql"
+  }
+}

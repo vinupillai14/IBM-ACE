@@ -1,0 +1,100 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Rest_APP",
+    "version" : "1.0.0",
+    "description" : "Rest_APP"
+  },
+  "paths" : {
+    "/book" : {
+      "get" : {
+        "operationId" : "getBook",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "400" : {
+            "description" : "The operation encountered an error! ",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve book",
+        "parameters" : [ {
+          "name" : "bookId",
+          "in" : "query",
+          "type" : "string",
+          "description" : "id of the book."
+        } ]
+      },
+      "put" : {
+        "operationId" : "putBook",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Update book",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        }, {
+          "name" : "bookId",
+          "in" : "query",
+          "type" : "string"
+        }, {
+          "name" : "bookTitle",
+          "in" : "query",
+          "type" : "string"
+        }, {
+          "name" : "bookAuthor",
+          "in" : "query",
+          "type" : "string"
+        } ]
+      },
+      "post" : {
+        "operationId" : "postBook",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a book",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "type" : "string"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      },
+      "delete" : {
+        "operationId" : "deleteBook",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Remove from book"
+      }
+    }
+  },
+  "basePath" : "/rest_app/v1"
+}

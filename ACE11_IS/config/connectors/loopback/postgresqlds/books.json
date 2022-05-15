@@ -1,0 +1,33 @@
+{
+"name":"books",  
+"options": {
+    "idInjection": true,
+    "postgresql": {
+      "table": "books"
+    }
+  },
+"properties":{
+"id":{ 
+      "type": "string",
+      "id": true,
+      "required": true,
+  "postgresql": {
+        "columnName": "Id"
+  }
+    },
+"title":{
+  "type":"string",
+  "required":"true",
+  "postgresql": {
+        "columnName": "Title"
+  }
+},
+"author":{
+  "type":"string",
+  "required":"true",
+  "postgresql": {
+        "columnName": "Author"
+  }
+}
+}
+}

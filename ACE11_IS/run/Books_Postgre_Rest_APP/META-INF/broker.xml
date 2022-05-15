@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><Broker>
+<CompiledApplication>
+<ConfigurableProperty uri="startMode"/>
+</CompiledApplication>
+<CompiledMessageFlow name="deleteBook" type="subflow">
+<ConfigurableProperty uri="deleteBook#Compute.dataSource"/>
+<ConfigurableProperty uri="deleteBook#Compute.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="deleteBook#Compute.validateMaster"/>
+<ConfigurableProperty uri="deleteBook#Compute1.dataSource"/>
+<ConfigurableProperty uri="deleteBook#Compute1.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="deleteBook#Compute1.validateMaster"/>
+<ConfigurableProperty uri="deleteBook#error.dataSource"/>
+<ConfigurableProperty uri="deleteBook#error.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="deleteBook#error.validateMaster"/>
+<ConfigurableProperty override="postgresqlds" uri="deleteBook#LoopBackRequest.dataSource"/>
+<ConfigurableProperty override="books" uri="deleteBook#LoopBackRequest.object"/>
+<ConfigurableProperty uri="deleteBook#LoopBackRequest.securityIdentity"/>
+<ConfigurableProperty override="120000" uri="deleteBook#LoopBackRequest.timeoutMilliseconds"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="getBook" type="subflow">
+<ConfigurableProperty uri="getBook#Compute.dataSource"/>
+<ConfigurableProperty uri="getBook#Compute.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="getBook#Compute.validateMaster"/>
+<ConfigurableProperty override="postgresqlds" uri="getBook#LoopBackRequest.dataSource"/>
+<ConfigurableProperty override="books" uri="getBook#LoopBackRequest.object"/>
+<ConfigurableProperty uri="getBook#LoopBackRequest.securityIdentity"/>
+<ConfigurableProperty override="120000" uri="getBook#LoopBackRequest.timeoutMilliseconds"/>
+<ConfigurableProperty uri="getBook#sendToPostgre.dataSource"/>
+<ConfigurableProperty uri="getBook#sendToPostgre.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="getBook#sendToPostgre.validateMaster"/>
+<ConfigurableProperty uri="getBook#ResponseFromDB.dataSource"/>
+<ConfigurableProperty uri="getBook#ResponseFromDB.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="getBook#ResponseFromDB.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="postBook" type="subflow">
+<ConfigurableProperty uri="postBook#toDB.dataSource"/>
+<ConfigurableProperty uri="postBook#toDB.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="postBook#toDB.validateMaster"/>
+<ConfigurableProperty uri="postBook#fromDB.dataSource"/>
+<ConfigurableProperty uri="postBook#fromDB.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="postBook#fromDB.validateMaster"/>
+<ConfigurableProperty override="postgresqlds" uri="postBook#LoopBackRequest.dataSource"/>
+<ConfigurableProperty override="books" uri="postBook#LoopBackRequest.object"/>
+<ConfigurableProperty uri="postBook#LoopBackRequest.securityIdentity"/>
+<ConfigurableProperty override="120000" uri="postBook#LoopBackRequest.timeoutMilliseconds"/>
+<ConfigurableProperty uri="postBook#error.dataSource"/>
+<ConfigurableProperty uri="postBook#error.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="postBook#error.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="putBook" type="subflow">
+<ConfigurableProperty uri="putBook#ToDB.dataSource"/>
+<ConfigurableProperty uri="putBook#ToDB.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="putBook#ToDB.validateMaster"/>
+<ConfigurableProperty uri="putBook#fromDB.dataSource"/>
+<ConfigurableProperty uri="putBook#fromDB.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="putBook#fromDB.validateMaster"/>
+<ConfigurableProperty override="postgresqlds" uri="putBook#LoopBackRequest.dataSource"/>
+<ConfigurableProperty override="books" uri="putBook#LoopBackRequest.object"/>
+<ConfigurableProperty uri="putBook#LoopBackRequest.securityIdentity"/>
+<ConfigurableProperty override="120000" uri="putBook#LoopBackRequest.timeoutMilliseconds"/>
+<ConfigurableProperty uri="putBook#error.dataSource"/>
+<ConfigurableProperty uri="putBook#error.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="putBook#error.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="gen.Rest_APP">
+<ConfigurableProperty uri="gen.Rest_APP#additionalInstances"/>
+<ConfigurableProperty uri="gen.Rest_APP#notificationThresholdMsgsPerSec"/>
+<ConfigurableProperty uri="gen.Rest_APP#maximumRateMsgsPerSec"/>
+<ConfigurableProperty uri="gen.Rest_APP#processingTimeoutSec"/>
+<ConfigurableProperty uri="gen.Rest_APP#processingTimeoutAction"/>
+<ConfigurableProperty uri="gen.Rest_APP#wlmPolicy"/>
+<ConfigurableProperty uri="gen.Rest_APP#commitCount"/>
+<ConfigurableProperty uri="gen.Rest_APP#commitInterval"/>
+<ConfigurableProperty uri="gen.Rest_APP#coordinatedTransaction"/>
+<ConfigurableProperty uri="gen.Rest_APP#consumerPolicySet"/>
+<ConfigurableProperty uri="gen.Rest_APP#providerPolicySet"/>
+<ConfigurableProperty uri="gen.Rest_APP#consumerPolicySetBindings"/>
+<ConfigurableProperty uri="gen.Rest_APP#providerPolicySetBindings"/>
+<ConfigurableProperty uri="gen.Rest_APP#securityProfileName"/>
+<ConfigurableProperty uri="gen.Rest_APP#monitoringProfile"/>
+<ConfigurableProperty uri="gen.Rest_APP#startMode"/>
+<ConfigurableProperty uri="gen.Rest_APP#startInstancesWhenFlowStarts"/>
+<ConfigurableProperty override="/rest_app/v1*" uri="gen.Rest_APP#HTTP Input.URLSpecifier"/>
+<ConfigurableProperty uri="gen.Rest_APP#HTTP Input.useHTTPS"/>
+<ConfigurableProperty uri="gen.Rest_APP#HTTP Input.decompressInputMessage"/>
+<ConfigurableProperty uri="gen.Rest_APP#HTTP Input.timeoutForClient"/>
+<ConfigurableProperty override="HTML" uri="gen.Rest_APP#HTTP Input.faultFormat"/>
+<ConfigurableProperty uri="gen.Rest_APP#HTTP Input.validateMaster"/>
+<ConfigurableProperty uri="gen.Rest_APP#HTTP Input.securityProfileName"/>
+<ConfigurableProperty uri="gen.Rest_APP#HTTP Reply.validateMaster"/>
+</CompiledMessageFlow>
+</Broker>

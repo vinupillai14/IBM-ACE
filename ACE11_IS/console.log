@@ -1,0 +1,92 @@
+.....2022-05-15 06:59:57.816508: .2022-05-15 12:29:57.818160: BIP1990I: Integration server 'ACE11_IS' starting initialization; version '11.0.0.11' (64-bit) 
+.....................Listening for transport dt_socket at address: 9997
+......................2022-05-15 12:30:02.684933: BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2022-05-15 12:30:02.698774: BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+.
+2022-05-15 12:30:02.699497: BIP1991I: Integration server has finished initialization. 
+2022-05-15 12:32:13.313106: BIP2152I: Configuration message received. 
+2022-05-15 12:32:13.340711: BIP2155I: About to 'Initialize' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:32:14.276615: BIP9320E: Message Flow 'gen.Books_Postgre_Rest_APP', 'gen.Books_Postgre_Rest_APP' encountered a failure and could not start. 
+2022-05-15 12:32:14.276683: BIP3877E: The 'datasources' file '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json' cannot be loaded. Error details: 'Error: ENOENT: no such file or directory, open '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json''. 
+2022-05-15 12:32:14.277523: BIP9320E: Message Flow 'gen.Rest_APP', 'gen.Rest_APP' encountered a failure and could not start. 
+2022-05-15 12:32:14.277576: BIP3877E: The 'datasources' file '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json' cannot be loaded. Error details: 'Error: ENOENT: no such file or directory, open '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json''. 
+2022-05-15 12:32:14.277691: BIP2155I: About to 'Start' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:32:14.277803: BIP9333W: RestAPI 'Books_Postgre_Rest_APP' has been created but contains errors which has prevented some resources from starting. 
+2022-05-15 12:32:14.277855: BIP1096E: The source 'Books_Postgre_Rest_APPproject.generated.bar' has been deployed but there were one or more failures which may mean the deployed resources will be unable to execute. 
+2022-05-15 12:32:14.278051: BIP2154I: Integration server finished with Configuration message. 
+2022-05-15 12:34:49.215124: BIP2152I: Configuration message received. 
+2022-05-15 12:34:49.234120: BIP2155I: About to 'Stop' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:34:49.234216: BIP2155I: About to 'TearDown' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:34:49.252924: BIP2155I: About to 'Initialize' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:34:50.774920: BIP2155I: About to 'Start' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+An http endpoint was registered on port '7800', path '/rest_app/v1*'.
+2022-05-15 12:34:50.808568: BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2022-05-15 12:34:50.808668: BIP1996I: Listening on HTTP URL '/rest_app/v1*'. 
+Started native listener for HTTP input node on port 7800 for URL /rest_app/v1*
+2022-05-15 12:34:50.808872: BIP2269I: Deployed resource 'gen.Books_Postgre_Rest_APP' (uuid='gen.Books_Postgre_Rest_APP',type='MessageFlow') started successfully. 
+2022-05-15 12:34:50.809240: BIP2271I: Deployed resource 'gen.Rest_APP' (uuid='gen.Rest_APP',type='MessageFlow') successfully stopped. 
+2022-05-15 12:34:50.809320: BIP9320E: Message Flow 'gen.Rest_APP', 'gen.Rest_APP' encountered a failure and could not start. 
+2022-05-15 12:34:50.809748: BIP6319E: The HTTPInput node 'HTTP Input' in message flow 'gen.Rest_APP' (application 'Books_Postgre_Rest_APP', library '') could not be deployed because it has an invalid URL specifier of '/rest_app/v1*'. The URL specifier is invalid as it clashes with the URL specifier '/rest_app/v1*' of the HTTPInput node 'HTTP Input' in message flow 'gen.Books_Postgre_Rest_APP' (application 'Books_Postgre_Rest_APP', library ''). 
+2022-05-15 12:34:50.809836: BIP9333W: RestAPI 'Books_Postgre_Rest_APP' has been changed but contains errors which has prevented some resources from starting. 
+2022-05-15 12:34:50.809936: BIP1096E: The source 'Books_Postgre_Rest_APPproject.generated.bar' has been deployed but there were one or more failures which may mean the deployed resources will be unable to execute. 
+2022-05-15 12:34:50.810236: BIP2154I: Integration server finished with Configuration message. 
+2022-05-15 12:36:03.467885: BIP2152I: Configuration message received. 
+2022-05-15 12:36:03.486932: BIP2155I: About to 'Stop' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:36:05.845579: BIP2271I: Deployed resource 'gen.Books_Postgre_Rest_APP' (uuid='gen.Books_Postgre_Rest_APP',type='MessageFlow') successfully stopped. 
+2022-05-15 12:36:05.845838: BIP2155I: About to 'TearDown' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:36:05.854218: BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
+2022-05-15 12:36:05.873208: BIP2155I: About to 'Initialize' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:36:05.957586: BIP2155I: About to 'Start' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+An http endpoint was registered on port '7800', path '/rest_app/v1*'.
+2022-05-15 12:36:05.992441: BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2022-05-15 12:36:05.992505: BIP1996I: Listening on HTTP URL '/rest_app/v1*'. 
+Started native listener for HTTP input node on port 7800 for URL /rest_app/v1*
+2022-05-15 12:36:05.992674: BIP2269I: Deployed resource 'gen.Books_Postgre_Rest_APP' (uuid='gen.Books_Postgre_Rest_APP',type='MessageFlow') started successfully. 
+2022-05-15 12:36:05.992950: BIP2271I: Deployed resource 'gen.Rest_APP' (uuid='gen.Rest_APP',type='MessageFlow') successfully stopped. 
+2022-05-15 12:36:05.993026: BIP9320E: Message Flow 'gen.Rest_APP', 'gen.Rest_APP' encountered a failure and could not start. 
+2022-05-15 12:36:05.993075: BIP6319E: The HTTPInput node 'HTTP Input' in message flow 'gen.Rest_APP' (application 'Books_Postgre_Rest_APP', library '') could not be deployed because it has an invalid URL specifier of '/rest_app/v1*'. The URL specifier is invalid as it clashes with the URL specifier '/rest_app/v1*' of the HTTPInput node 'HTTP Input' in message flow 'gen.Books_Postgre_Rest_APP' (application 'Books_Postgre_Rest_APP', library ''). 
+2022-05-15 12:36:05.993129: BIP9333W: RestAPI 'Books_Postgre_Rest_APP' has been changed but contains errors which has prevented some resources from starting. 
+2022-05-15 12:36:05.993177: BIP1096E: The source 'Books_Postgre_Rest_APPproject.generated.bar' has been deployed but there were one or more failures which may mean the deployed resources will be unable to execute. 
+2022-05-15 12:36:05.993388: BIP2154I: Integration server finished with Configuration message. 
+2022-05-15 12:36:49.415032: BIP2152I: Configuration message received. 
+2022-05-15 12:36:49.434340: BIP2155I: About to 'Stop' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:36:51.968508: BIP2271I: Deployed resource 'gen.Books_Postgre_Rest_APP' (uuid='gen.Books_Postgre_Rest_APP',type='MessageFlow') successfully stopped. 
+2022-05-15 12:36:51.968780: BIP2155I: About to 'TearDown' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:36:51.988420: BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
+2022-05-15 12:36:52.007908: BIP2155I: About to 'Initialize' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:36:52.149468: BIP2155I: About to 'Start' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+An http endpoint was registered on port '7800', path '/books_rest_app/v1*'.
+2022-05-15 12:36:52.184300: BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2022-05-15 12:36:52.184352: BIP1996I: Listening on HTTP URL '/books_rest_app/v1*'. 
+Started native listener for HTTP input node on port 7800 for URL /books_rest_app/v1*
+2022-05-15 12:36:52.184516: BIP2269I: Deployed resource 'gen.Books_Postgre_Rest_APP' (uuid='gen.Books_Postgre_Rest_APP',type='MessageFlow') started successfully. 
+An http endpoint was registered on port '7800', path '/rest_app/v1*'.
+2022-05-15 12:36:52.184764: BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2022-05-15 12:36:52.184796: BIP1996I: Listening on HTTP URL '/rest_app/v1*'. 
+Started native listener for HTTP input node on port 7800 for URL /rest_app/v1*
+2022-05-15 12:36:52.184896: BIP2269I: Deployed resource 'gen.Rest_APP' (uuid='gen.Rest_APP',type='MessageFlow') started successfully. 
+2022-05-15 12:36:52.184932: BIP9332I: RestAPI 'Books_Postgre_Rest_APP' has been changed successfully. 
+2022-05-15 12:36:52.184964: BIP9326I: The source 'Books_Postgre_Rest_APPproject.generated.bar' has been successfully deployed. 
+2022-05-15 12:36:52.185136: BIP2154I: Integration server finished with Configuration message. 
+2022-05-15 12:37:48.839948: BIP3120E: Exception condition detected on input node 'gen.Books_Postgre_Rest_APP.HTTP Input'. 
+2022-05-15 12:37:48.840044: BIP2230E: Error detected whilst processing a message in node 'gen.Books_Postgre_Rest_APP.Route To Label'. 
+2022-05-15 12:37:48.840096: BIP4256E: The RouteToLabel node 'Route To Label' was unable to locate a 'labelName' element in the local environment. 
+2022-05-15 12:39:43.582064: BIP3120E: Exception condition detected on input node 'gen.Books_Postgre_Rest_APP.HTTP Input'. 
+2022-05-15 12:39:43.582156: BIP2230E: Error detected whilst processing a message in node 'gen.Books_Postgre_Rest_APP.Route To Label'. 
+2022-05-15 12:39:43.582212: BIP4256E: The RouteToLabel node 'Route To Label' was unable to locate a 'labelName' element in the local environment. 
+2022-05-15 12:40:12.427748: BIP2152I: Configuration message received. 
+2022-05-15 12:40:12.444908: BIP2155I: About to 'Stop' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:40:13.593430: BIP2271I: Deployed resource 'gen.Books_Postgre_Rest_APP' (uuid='gen.Books_Postgre_Rest_APP',type='MessageFlow') successfully stopped. 
+2022-05-15 12:40:15.854447: BIP2271I: Deployed resource 'gen.Rest_APP' (uuid='gen.Rest_APP',type='MessageFlow') successfully stopped. 
+2022-05-15 12:40:15.854916: BIP2155I: About to 'TearDown' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:40:15.891334: BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
+2022-05-15 12:40:15.907719: BIP2155I: About to 'Initialize' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+2022-05-15 12:40:15.981399: BIP2155I: About to 'Start' the deployed resource 'Books_Postgre_Rest_APP' of type 'RestAPI'. 
+An http endpoint was registered on port '7800', path '/rest_app/v1*'.
+2022-05-15 12:40:16.019300: BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2022-05-15 12:40:16.019390: BIP1996I: Listening on HTTP URL '/rest_app/v1*'. 
+Started native listener for HTTP input node on port 7800 for URL /rest_app/v1*
+2022-05-15 12:40:16.019634: BIP2269I: Deployed resource 'gen.Rest_APP' (uuid='gen.Rest_APP',type='MessageFlow') started successfully. 
+2022-05-15 12:40:16.019730: BIP9332I: RestAPI 'Books_Postgre_Rest_APP' has been changed successfully. 
+2022-05-15 12:40:16.019793: BIP9326I: The source 'Books_Postgre_Rest_APPproject.generated.bar' has been successfully deployed. 
+2022-05-15 12:40:16.020102: BIP2154I: Integration server finished with Configuration message. 

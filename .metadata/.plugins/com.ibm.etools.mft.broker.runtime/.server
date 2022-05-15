@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IntegrationServerConnectionParameters Version="11.0.0" serverIpcSocket="/tmp/a2728755-8b6d-4a76-90df-6a145a8c8db4.uds" serverName="ACE11_IS" serverWorkDir="/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS" xmlns="http://www.ibm.com/xmlns/prod/ace/11"/>

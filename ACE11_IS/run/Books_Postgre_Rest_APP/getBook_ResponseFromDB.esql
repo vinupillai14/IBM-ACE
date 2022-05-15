@@ -1,0 +1,34 @@
+
+
+CREATE COMPUTE MODULE getBook_ResponseFromDB
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		--CREATE FIELD OutputRoot.JSON.Data.bookDetails IDENTITY (JSON.Array)bookDetails;
+		DECLARE bookRef REFERENCE TO InputRoot.JSON.Data.Item[1];
+		DECLARE count INTEGER ;
+		SET count= CARDINALITY(InputRoot.JSON.Data.Item[]);
+		DECLARE i INTEGER 1;
+		IF count>1 THEN 
+			WHILE LASTMOVE(bookRef) DO
+				SET OutputRoot.JSON.Data.Response.Book[i].Id= bookRef.id; 
+				SET OutputRoot.JSON.Data.Response.Book[i].Title= bookRef.title; 
+				SET OutputRoot.JSON.Data.Response.Book[i].Author= bookRef.author;
+				SET i = i+1; 
+				MOVE bookRef NEXTSIBLING ;
+			END WHILE;
+		ELSE 
+		-- checking if there is response from database
+			IF NOT EXISTS(InputRoot.JSON.Data[]) THEN 
+				SET OutputRoot.JSON.Data.Response.Error.message = 'No records found';
+			ELSE 
+				
+				SET OutputRoot.JSON.Data.Response.Book.Id = InputRoot.JSON.Data.id;
+				SET OutputRoot.JSON.Data.Response.Book.Title = InputRoot.JSON.Data.title;
+				SET OutputRoot.JSON.Data.Response.Book.Author = InputRoot.JSON.Data.author;	
+			END IF;	
+		
+		END IF;
+		RETURN TRUE;
+	END;
+
+END MODULE;

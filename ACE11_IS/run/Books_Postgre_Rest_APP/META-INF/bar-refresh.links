@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="false" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1640317553000" workspaceResource="/Books_Postgre_Rest_APP/deleteBook.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/deleteBook.subflow.&#xA;Successfully added file Books_Postgre_Rest_APP/deleteBook.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="deleteBook.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640317404000" workspaceResource="/Books_Postgre_Rest_APP/deleteBook_Compute.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/deleteBook_Compute.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/deleteBook_Compute.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="deleteBook_Compute.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1641266700000" workspaceResource="/Books_Postgre_Rest_APP/deleteBook_Compute1.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/deleteBook_Compute1.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/deleteBook_Compute1.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="deleteBook_Compute1.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640316867000" workspaceResource="/Books_Postgre_Rest_APP/deleteBook_error.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/deleteBook_error.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/deleteBook_error.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="deleteBook_error.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640316798000" workspaceResource="/Books_Postgre_Rest_APP/gen/Rest_APP.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/gen/Rest_APP.msgflow.&#xA;Successfully added file Books_Postgre_Rest_APP/gen/Rest_APP.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen/Rest_APP.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1641437534000" workspaceResource="/Books_Postgre_Rest_APP/getBook.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/getBook.subflow.&#xA;Successfully added file Books_Postgre_Rest_APP/getBook.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="getBook.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640058020000" workspaceResource="/Books_Postgre_Rest_APP/getBook_Compute.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/getBook_Compute.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/getBook_Compute.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="getBook_Compute.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640074307000" workspaceResource="/Books_Postgre_Rest_APP/getBook_ResponseFromDB.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/getBook_ResponseFromDB.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/getBook_ResponseFromDB.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="getBook_ResponseFromDB.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640072658000" workspaceResource="/Books_Postgre_Rest_APP/getBook_sendToPostgre.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/getBook_sendToPostgre.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/getBook_sendToPostgre.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="getBook_sendToPostgre.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640316280000" workspaceResource="/Books_Postgre_Rest_APP/postBook.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/postBook.subflow.&#xA;Successfully added file Books_Postgre_Rest_APP/postBook.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="postBook.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640316234000" workspaceResource="/Books_Postgre_Rest_APP/postBook_error.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/postBook_error.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/postBook_error.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="postBook_error.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640316567000" workspaceResource="/Books_Postgre_Rest_APP/postBook_fromDB.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/postBook_fromDB.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/postBook_fromDB.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="postBook_fromDB.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640316484000" workspaceResource="/Books_Postgre_Rest_APP/postBook_toDB.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/postBook_toDB.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/postBook_toDB.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="postBook_toDB.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640075154000" workspaceResource="/Books_Postgre_Rest_APP/putBook.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/putBook.subflow.&#xA;Successfully added file Books_Postgre_Rest_APP/putBook.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="putBook.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640074833000" workspaceResource="/Books_Postgre_Rest_APP/putBook_ToDB.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/putBook_ToDB.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/putBook_ToDB.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="putBook_ToDB.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640075146000" workspaceResource="/Books_Postgre_Rest_APP/putBook_error.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/putBook_error.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/putBook_error.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="putBook_error.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1640075304000" workspaceResource="/Books_Postgre_Rest_APP/putBook_fromDB.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/putBook_fromDB.esql.&#xA;Successfully added file Books_Postgre_Rest_APP/putBook_fromDB.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="putBook_fromDB.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1652597833000" workspaceResource="/Books_Postgre_Rest_APP/restapi.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/restapi.descriptor.&#xA;Successfully added file Books_Postgre_Rest_APP/restapi.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file Books_Postgre_Rest_APP/restapi.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="restapi.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1652597833000" workspaceResource="/Books_Postgre_Rest_APP/swagger.json">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file Books_Postgre_Rest_APP/swagger.json.&#xA;Successfully added file Books_Postgre_Rest_APP/swagger.json to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file Books_Postgre_Rest_APP/swagger.json to BAR file.&#xA;" severity="0"/>
+      <barEntry name="swagger.json"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

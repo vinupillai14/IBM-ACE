@@ -1,0 +1,23 @@
+Books_Postgre_Rest_APP>>>>ACE11_IS>>WARNING>>1652598133310
+BIP9320E<<Message Flow 'gen.Books_Postgre_Rest_APP', 'gen.Books_Postgre_Rest_APP' encountered a failure and could not start. <<1652598133310
+BIP3877E<<The 'datasources' file '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json' cannot be loaded. Error details: 'Error: ENOENT: no such file or directory, open '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json''. <<1652598133310
+BIP9320E<<Message Flow 'gen.Rest_APP', 'gen.Rest_APP' encountered a failure and could not start. <<1652598133310
+BIP3877E<<The 'datasources' file '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json' cannot be loaded. Error details: 'Error: ENOENT: no such file or directory, open '/Users/vinur/IBM/ACET11/GIT_workspace/ACE11_IS/config/connectors/loopback/datasources.json''. <<1652598133310
+BIP9333W<<RestAPI 'Books_Postgre_Rest_APP' has been created but contains errors which has prevented some resources from starting. <<1652598133310
+BIP1096E<<The source 'Books_Postgre_Rest_APPproject.generated.bar' has been deployed but there were one or more failures which may mean the deployed resources will be unable to execute. <<1652598133310
+Books_Postgre_Rest_APP>>>>ACE11_IS>>WARNING>>1652598289213
+BIP9320E<<Message Flow 'gen.Rest_APP', 'gen.Rest_APP' encountered a failure and could not start. <<1652598289213
+BIP6319E<<The HTTPInput node 'HTTP Input' in message flow 'gen.Rest_APP' (application 'Books_Postgre_Rest_APP', library '') could not be deployed because it has an invalid URL specifier of '/rest_app/v1*'. The URL specifier is invalid as it clashes with the URL specifier '/rest_app/v1*' of the HTTPInput node 'HTTP Input' in message flow 'gen.Books_Postgre_Rest_APP' (application 'Books_Postgre_Rest_APP', library ''). <<1652598289213
+BIP9333W<<RestAPI 'Books_Postgre_Rest_APP' has been changed but contains errors which has prevented some resources from starting. <<1652598289213
+BIP1096E<<The source 'Books_Postgre_Rest_APPproject.generated.bar' has been deployed but there were one or more failures which may mean the deployed resources will be unable to execute. <<1652598289213
+Books_Postgre_Rest_APP>>>>ACE11_IS>>WARNING>>1652598363466
+BIP9320E<<Message Flow 'gen.Rest_APP', 'gen.Rest_APP' encountered a failure and could not start. <<1652598363466
+BIP6319E<<The HTTPInput node 'HTTP Input' in message flow 'gen.Rest_APP' (application 'Books_Postgre_Rest_APP', library '') could not be deployed because it has an invalid URL specifier of '/rest_app/v1*'. The URL specifier is invalid as it clashes with the URL specifier '/rest_app/v1*' of the HTTPInput node 'HTTP Input' in message flow 'gen.Books_Postgre_Rest_APP' (application 'Books_Postgre_Rest_APP', library ''). <<1652598363466
+BIP9333W<<RestAPI 'Books_Postgre_Rest_APP' has been changed but contains errors which has prevented some resources from starting. <<1652598363466
+BIP1096E<<The source 'Books_Postgre_Rest_APPproject.generated.bar' has been deployed but there were one or more failures which may mean the deployed resources will be unable to execute. <<1652598363466
+Books_Postgre_Rest_APP>>>>ACE11_IS>>SUCCESS>>1652598409413
+BIP9332I<<RestAPI 'Books_Postgre_Rest_APP' has been changed successfully. <<1652598409413
+BIP9326I<<The source 'Books_Postgre_Rest_APPproject.generated.bar' has been successfully deployed. <<1652598409413
+Books_Postgre_Rest_APP>>>>ACE11_IS>>SUCCESS>>1652598612426
+BIP9332I<<RestAPI 'Books_Postgre_Rest_APP' has been changed successfully. <<1652598612426
+BIP9326I<<The source 'Books_Postgre_Rest_APPproject.generated.bar' has been successfully deployed. <<1652598612426
