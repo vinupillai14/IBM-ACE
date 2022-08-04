@@ -5,7 +5,7 @@ CREATE COMPUTE MODULE DevOps_Compute
 	BEGIN
 		-- CALL CopyMessageHeaders();
 		-- CALL CopyEntireMessage();
-		SET OutputRoot.JSON.Data.DevOps_Sample.param1='testing..';
+		SET OutputRoot.JSON.Data.DevOps_Sample.param1='testing..4th Aug';
 		RETURN TRUE;
 	END;
 
