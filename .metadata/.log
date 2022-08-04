@@ -397,3 +397,70 @@ Binding(ALT+COMMAND+C,
 
 !ENTRY com.ibm.mq.runtime 4 0 2022-05-15 12:29:04.742
 !MESSAGE WebSphere MQ install location is not found.
+!SESSION 2022-08-04 18:04:52.548 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -product com.ibm.etools.msgbroker.tooling.ide -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.ibm.etools.msgbroker.tooling.ide -showlocation
+
+!ENTRY com.ibm.etools.mft.pattern.support.java 4 0 2022-08-04 18:04:59.594
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.ibm.etools.mft.pattern.support.java [321]
+  Unresolved requirement: Require-Bundle: com.ibm.etools.mft.pattern.support.php
+    -> Bundle-SymbolicName: com.ibm.etools.mft.pattern.support.php; bundle-version="11.0.0.11"; singleton:="true"
+       com.ibm.etools.mft.pattern.support.php [322]
+         Unresolved requirement: Require-Bundle: com.ibm.etools.mft.pattern.support.php.runtime
+           -> Bundle-SymbolicName: com.ibm.etools.mft.pattern.support.php.runtime; bundle-version="11.0.0.11"; singleton:="true"
+              com.ibm.etools.mft.pattern.support.php.runtime [323]
+                Unresolved requirement: Require-Capability: osgi.native; native.paths.0:List<String>="/php/win32/loader.dll"; native.paths.2:List<String>="/php/linux/libloader.so"; native.paths.1:List<String>="/php/win64/loader.dll"; native.paths.3:List<String>="/php/linux64/libloader.so"; filter:="(|(&(|(osgi.native.osname~=win32)(osgi.native.osname~=Windows Server 2008)(osgi.native.osname~=Windows Server 2008 R2)(osgi.native.osname~=Windows Server 2016)(osgi.native.osname~=Windows Server 2016 R2)(osgi.native.osname~=Windows 10)(osgi.native.osname~=Windows 8)(osgi.native.osname~=Windows Server 2012)(osgi.native.osname~=Windows Server 2012 R2))(osgi.native.processor~=x86))(&(|(osgi.native.osname~=win32)(osgi.native.osname~=Windows Server 2008)(osgi.native.osname~=Windows Server 2008 R2)(osgi.native.osname~=Windows 7)(osgi.native.osname~=Windows 8)(osgi.native.osname~=Windows Server 2016)(osgi.native.osname~=Windows Server 2016 R2)(osgi.native.osname~=Windows 10)(osgi.native.osname~=Windows Server 2012)(osgi.native.osname~=Windows Server 2012 R2))(osgi.native.processor~=x86_64))(&(osgi.native.osname~=linux)(osgi.native.processor~=x86))(&(osgi.native.osname~=linux)(osgi.native.processor~=x86_64)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.registry 2 0 2022-08-04 18:05:01.266
+!MESSAGE The extensions and extension-points from the bundle "org.eclipse.emf.commonj.sdo" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-08-04 18:05:41.509
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2022-08-04 18:05:41.816
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.core.net 1 0 2022-08-04 18:05:42.583
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2022-08-04 18:05:43.514
+!MESSAGE 
+
+!ENTRY org.eclipse.jface 2 0 2022-08-04 18:05:43.791
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-08-04 18:05:43.791
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.copyInstance,Copy Result,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@620ba19c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@179367ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.ibm.mq.runtime 4 0 2022-08-04 18:05:48.507
+!MESSAGE WebSphere MQ install location is not found.

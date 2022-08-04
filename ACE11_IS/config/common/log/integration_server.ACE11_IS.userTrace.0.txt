@@ -5,3 +5,10 @@
 === Timestamps are formatted in local time, 330 minutes past GMT. ===
 === Time now 2022-05-15 12:29:57.717184 ===
 
+
+====== Starting plaintext trace (process ID 39866 - integration_server.ACE11_IS) ======
+=== Build ib1100-L201216.46 (S1100-L201215.21186) - IBM App Connect Enterprise 11.0.0.11 ===
+=== Platform Mac OS X / x86_64 / 10.16.0 ===
+=== Timestamps are formatted in local time, 60 minutes past GMT. ===
+=== Time now 2022-08-04 18:06:39.812204 ===
+
